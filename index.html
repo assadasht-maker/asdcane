@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Sugarcane</title>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"/>
+
+  <!-- TensorFlow + Teachable Machine -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+  <!-- Material Design -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+</head>
+
+<body>
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+        <!-- Header -->
+        <header class="mdl-layout__header">
+          <div class="mdl-layout__header-row custom-header">
+            
+<!-- ปุ่มสลับกล้อง -->
+    <button id="flip-btn" class="icon-btn" onclick="flipCamera()">
+      <i class="material-icons">flip_camera_android</i>
+    </button>
+
+            <!-- Title กลาง -->
+            <span class="mdl-layout-title center-title">
+              Sugarcane Leaf Disease
+            </span>
+      
+            <!-- spacer -->
+            <div class="mdl-layout-spacer"></div>
+      
+          </div>
+        </header>
+      
+        <!-- Content -->
+        <main class="mdl-layout__content">
+          <div class="page-content">
+            <!-- your content -->
+          </div>
+        </main>
+      
+      </div>
+
+  <!-- Content -->
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <button type="button" onclick="init()">Start</button>
+      <div id="webcam-container"></div>
+      <div id="label-container"></div>
+    </div>
+  </main>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
