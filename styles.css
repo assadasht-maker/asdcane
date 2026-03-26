@@ -1,0 +1,100 @@
+
+.custom-header {
+    position: relative;
+  }
+  
+  .center-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+
+button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(80, 169, 236);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: rgb(255, 158, 3);
+  }
+  
+  /* ✅ แก้ชื่อถูกต้อง */
+  #webcam-container {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+
+  #label-container {
+  position: fixed;
+  top: 370px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  max-height: 250px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  z-index: 999;
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 20px;
+  background-color: #f0f0f0; /* fixed */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #59e42bd8;
+  border-radius: 10px;
+  width: 50%; /* controls progress */
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 14px;
+  white-space: nowrap;
+  width: 50px;
+  text-align: right;
+}
+
